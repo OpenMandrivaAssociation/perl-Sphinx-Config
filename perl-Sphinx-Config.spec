@@ -11,7 +11,6 @@ Source0:	http://search.cpan.org/CPAN/authors/id/J/JJ/JJSCHUTZ/%{real_name}-%{ver
 BuildRequires:	perl-devel
 BuildRequires:	perl-Test-Pod-Coverage
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 Sphinx search engine configuration file read/modify/write.
