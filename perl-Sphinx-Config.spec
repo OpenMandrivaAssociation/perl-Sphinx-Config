@@ -1,5 +1,5 @@
 %define upstream_name    Sphinx-Config
-%define upstream_version 0.01
+%define upstream_version 0.05
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
