@@ -11,6 +11,7 @@ Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
 Source0:	http://search.cpan.org/CPAN/authors/id/J/JJ/JJSCHUTZ/%{upstream_name}-%{upstream_version}.tar.gz
 
+BuildRequires:	perl(List::MoreUtils)
 BuildRequires:	perl-Test-Pod-Coverage
 BuildArch:	noarch
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
