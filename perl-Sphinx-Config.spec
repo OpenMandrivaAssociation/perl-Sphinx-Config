@@ -1,13 +1,14 @@
 %define upstream_name    Sphinx-Config
+%define upstream_version 0.10
 Name:		perl-%{upstream_name}
 Version:	0.10
-Release:	2
+Release:	1
 
 Summary:	Sphinx search engine configuration file read/modify/write
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/Sphinx-Config
-Source0:	https://cpan.metacpan.org/authors/id/J/JJ/JJSCHUTZ/Sphinx-Config-%{version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/J/JJ/JJSCHUTZ/Sphinx-Config-0.10.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -36,35 +37,3 @@ make test
 %{perl_vendorlib}/Sphinx/Config.pm
 %attr(0644,root,root) %{_mandir}/man3/Sphinx::Config.3pm*
 
-%changelog
-* Sat Mar 26 2011 Guillaume Rousse <guillomovitch@mandriva.org> 0.90.0-1mdv2011.0
-+ Revision: 648578
-- update to new version 0.09
-- update to new version 0.08
-
-* Thu Aug 06 2009 Jérôme Quelin <jquelin@mandriva.org> 0.50.0-1mdv2010.0
-+ Revision: 410706
-- adding missing buildrequires:
-- update to 0.05
-
-* Wed Jul 29 2009 Jérôme Quelin <jquelin@mandriva.org> 0.10.0-1mdv2010.0
-+ Revision: 404393
-- rebuild using %0.10 Thu Jul 31 2008 Thierry Vignaud <tv@mandriva.org> 0.01-4mdv2009.0
-+ Revision: 258357
-- rebuild
-
-* Thu Jul 24 2008 Thierry Vignaud <tv@mandriva.org> 0.01-3mdv2009.0
-+ Revision: 246419
-- rebuild
-- kill re-definition of %%buildroot on Pixel's request
-
-  + Olivier Blin <oblin@mandriva.com>
-    - restore BuildRoot
-
-* Thu Nov 01 2007 Oden Eriksson <oeriksson@mandriva.com> 0.01-1mdv2008.1
-+ Revision: 104412
-- import perl-Sphinx-Config
-
-
-* Thu Nov 01 2007 Oden Eriksson <oeriksson@mandriva.com> 0.01-1mdv2008.1
-- initial Mandriva package 
