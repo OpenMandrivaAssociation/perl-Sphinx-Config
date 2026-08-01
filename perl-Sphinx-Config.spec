@@ -2,7 +2,7 @@
 %define upstream_version 0.10
 Name:		perl-%{upstream_name}
 Version:	0.10
-Release:	2
+Release:	3
 
 Summary:	Sphinx search engine configuration file read/modify/write
 License:	GPL+ or Artistic
